@@ -1,6 +1,6 @@
 # Web
 --------
-Descriptions and examples of various web-development tools and websites build by using those.
+Descriptions and implementation of various web-development tools and web-pages built by using those.
 
 # Tools and Technologies Used
 -------------------------
