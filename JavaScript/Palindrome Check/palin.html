@@ -1,0 +1,32 @@
+<html>
+    <body>
+        Enter word/sentence to check for palindrome:<input type="text" name="palin"><br>
+        <input type="submit" name="palinbtn" onclick="checkPalin()" value="Check Paindrome">
+        <script>
+            function checkPalin()
+            {
+                var word=document.getElementsByName("input")[0].value;
+                word=word.toLowerCase();
+                word=word.replace(/ /g, '')
+                var i=0;
+                var j=word.length-1;
+                var x=true;
+                while(i<j){
+                    if(word[i] !== word[j]){
+                        x=false;
+                        break;
+                    }
+                    i++;
+                    j--;
+                }
+                if(x){
+                    alert('The entry is a palindrome.');
+                }
+                else{
+                    alert('The entry is not a palindrome.');
+                }
+            }
+
+        </script>
+    </body>
+</html>
