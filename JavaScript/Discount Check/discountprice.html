@@ -7,7 +7,30 @@
                 text-align: center;
                 color: #b03060;
             }
-
+            table{
+                float: left;
+                width: 35%;
+                border-style: 5px solid;
+                border-width: 30%;
+                padding: 10px;
+            }
+            #submit{
+                float: center;
+                margin-left: 45%;
+                width: 45%;
+            }
+            div{
+                text-align: center;
+                font-weight: bold;
+            }
+            #result{
+                font-style: italic;
+                color: #FF0000;
+                size: 40px;
+            }
+            #discount{
+                size: 25px;
+            }
         </style>
     </head>
     <body style="background-color: #99FFFF;">
@@ -31,6 +54,8 @@
                 </select></td>
             </tr>
         </table></form>
+        <br />
+        <br />
         <input type="submit" value="GET DISCOUNT PRICE" onclick="man()" id="submit">
         <div id="discount"></div>
         <div id="result"></div>
@@ -38,9 +63,22 @@
         <script>
             function man()
             {
-                var a=document.getElementsById("price").value;
-                var s=document.getElementById("season").value;
+                var price=document.getElementById("price").value;
+                var season=document.getElementById("season").value;
                 var d;
+                if (season=="summer"){
+                    document.getElementById("discount").innerHTML="The discount is 10%";
+                    d=price-(price*0.1)
+                }
+                else if(season=="newyear"){
+                    document.getElementById("discount").innerHTML="The discount is 5%";
+                    d=price-(price*0.05)
+                }
+                else if(season=="clearance"){
+                    document.getElementById("discount").innerHTML="The discount is 15%";
+                    d=price-(price*0.15)
+                }
+                document.getElementById("result").innerHTML="The discounted price: Rs "+d;
             }
 
         </script>

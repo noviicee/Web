@@ -2,11 +2,11 @@
 
 Create a web page which calculates the discount for the product for the specific season. The seasons with their discount rates are summer (10%), new year (5%) and clearance (15%). The discount is calculated on the price of the product. The web page should look like
 
-![pic-0](//Web/gitignore/ReferenceImages/samplescreen.jpg)
+![pic-0](//Web/gitignore/ReferenceImages/HTML/samplescreen.jpg)
 
 The outcome webpage should look as
 
-![pic-1](//Web/gitignore/ReferenceImages/discountoutput.png)
+![pic-1](//Web/gitignore/ReferenceImages/HTML/discountoutput.png)
 
 The client side validation is performed using JavaScript.
 
