@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            h2{
+                color: darkgray;
+                font-style: italic;
+            }
+        </style>
+    </head>
+        <body>
+            <form id="bookform" autocomplete="on">
+            <h1>A Simple Form</h1>
+            <h2>Form Fundamentals</h2>
+            <fieldset>
+            <legend>Customer Info</legend>
+            Name<input type="text" name="cusname" placeholder="Enter your name" required> <br><br>
+            Telephone<input type="tel" placeholder="Pattern: 234-567-8910" required name="telephone" pattern="(([0-9]{3})-([0-9]{3})-([0-9]{4}))"> <br><br>
+            Email address<input type="email" placeholder="Enter your email address" required multiple name="email"> <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Books</legend>
+                <input type="text" name="book" list="books">
+                <datalist id="books">
+                    <option value="HTML5 - Bruce Lawson and Remy Sharp"></option>
+                    <option value="HTML5 : Up and Running - Mark Pilgrim"></option>
+                    <option value="Head First HTML5 Programming - Eric Freeman"></option>
+                    <option value="Mastering HTML,CSS and JavaScript - Laura Lemay"></option>
+                </datalist>
+                Quantity (Maximum 5):<input name="quantity" type="number" minlength="1" max="5">
+            </fieldset> <br>
+            <input type="submit" value="Submit" value="submit">
+        </form>
+        </body>
+</html>
